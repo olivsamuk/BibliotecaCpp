@@ -51,6 +51,10 @@ public:
 	string getTitulo(){
 		return nome;
 	}
+
+	bool getStatus(){
+		return status;
+	}
 };
 class Usuario{
 	public:
@@ -146,7 +150,14 @@ int main() {
 
 	for (int i = 0; i < 5; ++i)
 	{
-		cout << i + 1 << " - " << vetorObras[i].getTitulo() << endl;
+		string status;
+		if (vetorObras[i].getStatus() == 0)
+		 {
+		 	status = "Disponivel";
+		 } else {
+		 	status = "indisponivel";
+		 }
+		cout << i + 1 << " - " << vetorObras[i].getTitulo() << " (" << status << ") " << endl;
 	}
 	
 	
