@@ -1,3 +1,13 @@
+/*
+
+Aqui você pode adicionar comentários
+Em
+diversas 
+linhas
+*/
+
+// Esses comentários são de uma linha
+
 #include <iostream>
 #include<string>
 using namespace std;
